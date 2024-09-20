@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #222;
+    color: #fff;
+    overflow-y: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: 100%;
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(22, 22, 22, 0.5);
+}
+
+.logo i{
+    font-size: 2.5vw;
+    padding-top: 10px;
+    display: none;
+}
+
+#bars_logo{
+    margin-top: 11px;
+}
+
+.nav-menu .btn {
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    right: 20px;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    margin-top: 70px;
+    background-color: rgb(22, 22, 22, 0.2);
+    padding-top: 0px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #363636;
+    cursor: pointer;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 160px;
+}
+
+.main h1 {
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.main h2 {
+    font-size: 3vw;
+}
+
+
+.auth-page {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #222;
+}
+
+.auth-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-page form {
+    margin-top: 20px;
+}
+
+.auth-page input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-page button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-page p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-page a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#zone_el{
+    padding-left: 2vw;
+    margin-top: 0.6vh;
+    display: none;
+}
+
+#zone_el li{
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#zone:hovr #zone_el{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    #Sidebar{
+        width: 100%;
+        height: 400px;
+        background-color:  rgb(22, 22, 22, 0.7);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        white-space: none;
+        position: absolute;
+        top: 6px;
+        z-index: 6;
+        display: none;
+        margin-top: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        padding-right: 0%;
+    }
+    .navbar{
+        width: 100%;
+        padding-left: 0px;
+        box-sizing: border-box;
+    }
+    .main {
+        width: 100%;
+        margin-top: 450px;
+        box-sizing: border-box;
+        padding-right: 0px;
+    }
+    .container{
+        width: 100%;
+        display: block;
+    }
+    .logo i{
+        font-size: 40px;
+        padding-top: 15px;
+        padding-left: 20px;
+        display: block;
+    }
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (max-width: 1900px) {
+    body {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .sidebar {
+        width: 15vw;
+        padding: 20px;
+        margin-top: 70px;
+        background-color: rgb(22, 22, 22, 0.2);
+        padding-top: 0px;
+    }
+    .main{
+        padding-right: 30px;
+    }
+    h1{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .sidebar {
+        width: 160px;
+        padding: 20px;
+        margin-top: 70px;
+        background-color: rgb(22, 22, 22, 0.2);
+        padding-top: 0px;
+    }
+}
