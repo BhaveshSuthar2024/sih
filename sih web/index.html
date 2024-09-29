@@ -15,9 +15,7 @@
     <nav class="navbar">
         <div class="logo" id="Logo">
             <i class="ri-menu-line"></i>
-        </div>
-       
-        
+        </div>    
     </nav>
 
     <div class="container">
@@ -25,12 +23,12 @@
             <div class="menu">
                 <h3>Main Menu</h3>
                 <ul>
-                    <li><a href="2.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="2.html" target="_blank"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                     <li id="zone"><a ><i class="fas fa-plug"></i> Zone</a>
                         <ul id="zone_el">
-                            <li ><a href="#"></a>Zone 1</li>
-                            <li><a href="#"></a>Zone 2</li>
-                            <li><a href="#"></a>Zone 3</li>
+                            <li id="zone1"><a></a>Zone 1</li>
+                            <li id="zone2"><a></a>Zone 2</li>
+                            <li id="zone3"><a></a>Zone 3</li>
                         </ul>
                     </li>
                     <li><a href="2.html"><i class="fas fa-file-alt"></i> Report of the day</a></li>
@@ -61,6 +59,148 @@
                 <button class="btn">Solar</button>
             </div>
             <h2>Non-Electrical Sun Tracking</h2>
+        </div>
+        <div id="zone_screen">
+            <div id="zone_screen_heading">Efficiency</div>
+            <div id="gauge_cont">
+                <div class="gauge_container">
+                    <div class="circular-text_home_1">
+                        <span style="--i: 2;"><p style="transform: rotate(226deg);">0</p></span>
+                        <span style="--i: 3;"><p style="transform: rotate(198deg);">10</p></span>
+                        <span style="--i: 4;"><p style="transform: rotate(173deg);">20</p></span>
+                        <span style="--i: 5;"><p style="transform: rotate(146deg);">30</p></span>
+                        <span style="--i: 6;"><p style="transform: rotate(119deg);">40</p></span>
+                        <span style="--i: 7;"><p style="transform: rotate(92deg);">50</p></span>
+                        <span style="--i: 8;"><p style="transform: rotate(66deg);">60</p></span>
+                        <span style="--i: 9;"><p style="transform: rotate(38deg);">70</p></span>
+                        <span style="--i: 10;"><p style="transform: rotate(11deg);">80</p></span>
+                        <span style="--i: 11;"><p style="transform: rotate(345deg);">90</p></span>
+                        <span style="--i: 12;"><p style="transform: rotate(316deg);">100</p></span>
+                        <div class="tickbar" id="tickbar1"><div id="pointer"></div><div id="pointer_back"></div></div>
+                    </div>
+                <div id="gauge_1" class="gauges"><div class="gauge_div"></div></div><div class="zone_1_text" id="zone_text_1" data-val="86">00 </div><div id="percent_1">%</div></div>
+                
+                
+                <div class="gauge_container">
+                    <div class="circular-text_home_2">
+                        <span style="--i: 2;"><p style="transform: rotate(226deg);">0</p></span>
+                        <span style="--i: 3;"><p style="transform: rotate(198deg);">10</p></span>
+                        <span style="--i: 4;"><p style="transform: rotate(173deg);">20</p></span>
+                        <span style="--i: 5;"><p style="transform: rotate(146deg);">30</p></span>
+                        <span style="--i: 6;"><p style="transform: rotate(119deg);">40</p></span>
+                        <span style="--i: 7;"><p style="transform: rotate(92deg);">50</p></span>
+                        <span style="--i: 8;"><p style="transform: rotate(66deg);">60</p></span>
+                        <span style="--i: 9;"><p style="transform: rotate(38deg);">70</p></span>
+                        <span style="--i: 10;"><p style="transform: rotate(11deg);">80</p></span>
+                        <span style="--i: 11;"><p style="transform: rotate(345deg);">90</p></span>
+                        <span style="--i: 12;"><p style="transform: rotate(316deg);">100</p></span>
+                        <div class="tickbar" id="tickbar2"><div id="pointer"></div><div id="pointer_back"></div></div>
+                    </div>    
+                <div id="gauge_1" class="gauges"><div class="gauge_div"></div></div><div class="zone_1_text" id="zone_text_2" data-val="89">00 </div><div id="percent_2">%</div></div>
+                
+                
+                <div class="gauge_container">
+                    <div class="circular-text_home_3">
+                        <span style="--i: 2;"><p style="transform: rotate(226deg);">0</p></span>
+                        <span style="--i: 3;"><p style="transform: rotate(198deg);">10</p></span>
+                        <span style="--i: 4;"><p style="transform: rotate(173deg);">20</p></span>
+                        <span style="--i: 5;"><p style="transform: rotate(146deg);">30</p></span>
+                        <span style="--i: 6;"><p style="transform: rotate(119deg);">40</p></span>
+                        <span style="--i: 7;"><p style="transform: rotate(92deg);">50</p></span>
+                        <span style="--i: 8;"><p style="transform: rotate(66deg);">60</p></span>
+                        <span style="--i: 9;"><p style="transform: rotate(38deg);">70</p></span>
+                        <span style="--i: 10;"><p style="transform: rotate(11deg);">80</p></span>
+                        <span style="--i: 11;"><p style="transform: rotate(345deg);">90</p></span>
+                        <span style="--i: 12;"><p style="transform: rotate(316deg);">100</p></span>
+                        <div class="tickbar" id="tickbar3"><div id="pointer"></div><div id="pointer_back"></div></div>
+                    </div>
+                <div id="gauge_1" class="gauges"><div class="gauge_div"></div></div><div class="zone_1_text" id="zone_text_3" data-val="80">00 </div><div id="percent_3">%</div></div>
+            </div>
+        </div>
+
+
+        <div id="zone_1_screen">
+            <div id="zone_1_screen_heading">Efficiency</div>
+            <div id="gauge_1_cont">
+                <div class="gauge_1_container"><div class="circular-text">
+                    <span style="--i: 2;"><p style="transform: rotate(226deg);">0</p></span>
+                    <span style="--i: 3;"><p style="transform: rotate(198deg);">10</p></span>
+                    <span style="--i: 4;"><p style="transform: rotate(173deg);">20</p></span>
+                    <span style="--i: 5;"><p style="transform: rotate(146deg);">30</p></span>
+                    <span style="--i: 6;"><p style="transform: rotate(119deg);">40</p></span>
+                    <span style="--i: 7;"><p style="transform: rotate(92deg);">50</p></span>
+                    <span style="--i: 8;"><p style="transform: rotate(66deg);">60</p></span>
+                    <span style="--i: 9;"><p style="transform: rotate(38deg);">70</p></span>
+                    <span style="--i: 10;"><p style="transform: rotate(11deg);">80</p></span>
+                    <span style="--i: 11;"><p style="transform: rotate(345deg);">90</p></span>
+                    <span style="--i: 12;"><p style="transform: rotate(316deg);">100</p></span>
+                    <div class="Tickbar" id="tickbar1"><div id="pointer"></div><div id="pointer_back"></div></div>
+                </div><div id="gauge_1_1" class="gauges"><div class="gauge_div"></div></div><div id="eff_count"></div><div class="zone_1_text" id="zone_1_texts" data-val="86">000 </div><div class="percent">%</div></div>
+                <div id="gauge_1_cont_details">
+                    <div class="gauge_1_cont_details_heading">Zone 1</div>
+                    <div class="gauge_1_cont_details_cont" >Voltage :-  <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage :- <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage :- <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage :- <span class="gauge_1_cont_details_value">440</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="zone_2_screen">
+            <div id="zone_1_screen_heading">Efficiency</div>
+                <div id="gauge_1_cont">
+                    <div class="gauge_1_container"><div class="circular-text">
+                        <span style="--i: 2;"><p style="transform: rotate(226deg);">0</p></span>
+                        <span style="--i: 3;"><p style="transform: rotate(198deg);">10</p></span>
+                        <span style="--i: 4;"><p style="transform: rotate(173deg);">20</p></span>
+                        <span style="--i: 5;"><p style="transform: rotate(146deg);">30</p></span>
+                        <span style="--i: 6;"><p style="transform: rotate(119deg);">40</p></span>
+                        <span style="--i: 7;"><p style="transform: rotate(92deg);">50</p></span>
+                        <span style="--i: 8;"><p style="transform: rotate(66deg);">60</p></span>
+                        <span style="--i: 9;"><p style="transform: rotate(38deg);">70</p></span>
+                        <span style="--i: 10;"><p style="transform: rotate(11deg);">80</p></span>
+                        <span style="--i: 11;"><p style="transform: rotate(345deg);">90</p></span>
+                        <span style="--i: 12;"><p style="transform: rotate(316deg);">100</p></span>
+                        <div class="Tickbar" id="tickbar2"><div id="pointer"></div><div id="pointer_back"></div></div>
+                    </div>
+                    <div id="gauge_1_2" class="gauges"><div class="gauge_div"></div></div><div class="zone_1_text" id="zone_1_texts" data-val="89"> 000 </div><div class="percent">%</div></div>
+                    <div id="gauge_1_cont_details">
+                        <div class="gauge_1_cont_details_heading">Zone 2</div>
+                        <div class="gauge_1_cont_details_cont" >Voltage :-  <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage  :- <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage  :- <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage  :- <span class="gauge_1_cont_details_value">440</span></div>
+                        </div>
+                </div>
+                
+                
+
+        </div>
+        <div id="zone_3_screen">
+            <div id="zone_1_screen_heading">Efficiency</div>
+            <div id="gauge_1_cont">
+                <div class="gauge_1_container"><div class="circular-text">
+                    <span style="--i: 2;"><p style="transform: rotate(226deg);">0</p></span>
+                    <span style="--i: 3;"><p style="transform: rotate(198deg);">10</p></span>
+                    <span style="--i: 4;"><p style="transform: rotate(173deg);">20</p></span>
+                    <span style="--i: 5;"><p style="transform: rotate(146deg);">30</p></span>
+                    <span style="--i: 6;"><p style="transform: rotate(119deg);">40</p></span>
+                    <span style="--i: 7;"><p style="transform: rotate(92deg);">50</p></span>
+                    <span style="--i: 8;"><p style="transform: rotate(66deg);">60</p></span>
+                    <span style="--i: 9;"><p style="transform: rotate(38deg);">70</p></span>
+                    <span style="--i: 10;"><p style="transform: rotate(11deg);">80</p></span>
+                    <span style="--i: 11;"><p style="transform: rotate(345deg);">90</p></span>
+                    <span style="--i: 12;"><p style="transform: rotate(316deg);">100</p></span>
+                    <div class="Tickbar" id="tickbar3"><div id="pointer"></div><div id="pointer_back"></div></div>
+                </div>
+                <div id="gauge_1_3" class="gauges"><div class="gauge_div"></div></div><div class="zone_1_text" id="zone_1_texts" data-val="80">000 </div><div class="percent">%</div></div>
+                <div id="gauge_1_cont_details">
+                    <div class="gauge_1_cont_details_heading">Zone 3</div>
+                    <div class="gauge_1_cont_details_cont">Voltage :-  <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage :- <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage :- <span class="gauge_1_cont_details_value">440</span></div>
+                        <div class="gauge_1_cont_details_cont">Voltage :- <span class="gauge_1_cont_details_value">440</span></div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
